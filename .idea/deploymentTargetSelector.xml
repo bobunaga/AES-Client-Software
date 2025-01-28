@@ -4,17 +4,14 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-01-21T10:18:36.395989300Z">
+        <DropdownSelection timestamp="2025-01-28T14:50:07.511767700Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\PREDATOR\.android\avd\Sunmi_v3_mix_API_35.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\PREDATOR\.android\avd\Sunmi_v3_mix.avd" />
             </handle>
           </Target>
         </DropdownSelection>
         <DialogSelection />
-      </SelectionState>
-      <SelectionState runConfigName="MainActivity">
-        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>
