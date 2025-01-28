@@ -1,14 +1,14 @@
 {
-    "Beer": [1,2],
-    "Vodka": [1,2],
-    "Energy": [1,2],
-    "Whisky": [1,2],
-    "Tequila": [1,2],
-    "Soft Drink": [1,2],
-    "Wine": [1,2],
-    "Sekt": [1,2],
-    "Gin": [1,2],
-    "Cocktail": [1,2],
-    "Champagne": [1,2],
-    "Scotch": [1,2]
+  "Beer": [1,2],
+  "Vodka": [1,2],
+  "Energy": [1,2],
+  "Whisky": [1,2],
+  "Tequila": [1,2],
+  "Soft Drink": [1,2],
+  "Wine": [1,2],
+  "Sekt": [1,2],
+  "Gin": [1,2],
+  "Cocktail": [1,2],
+  "Champagne": [1,2],
+  "Scotch": [1,2]
 }

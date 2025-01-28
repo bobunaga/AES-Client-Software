@@ -91,7 +91,6 @@ class MainActivity : AppCompatActivity() {
                     val productArray = jsonObject.getJSONArray(key)
                     val price = productArray.getInt(0) // Get the price (0th index)
                     val sold = productArray.getInt(1)
-                    val total = productArray.getInt(2)
 
                     Log.d("ReadJson", "Product: $key, Price: $price")
 

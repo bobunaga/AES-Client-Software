@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-01-28T14:50:07.511767700Z">
+        <DropdownSelection timestamp="2025-01-28T15:03:59.766546100Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\PREDATOR\.android\avd\Sunmi_v3_mix.avd" />
