@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <!-- Order Summary Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#333333"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/orderSummaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Order Summary"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#444444"
+            android:padding="8dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/orderSummaryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+
+        <!-- Total Section with White Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/totalLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total:"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/totalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="€0.00"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/totalRevenueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total Revenue: €0"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/nfcBalanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="NFC Balance: €0"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <!-- Buttons with Adjusted Size -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:scaleX="1"
+            android:translationY="2dp">
+
+            <!-- Reduced margin between buttons -->
+
+            <!-- Payment Button -->
+            <Button
+                android:id="@+id/fundsInterfaceButton"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#E53935"
+                android:text="FUNDS"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <!-- Read NFC Button -->
+            <Button
+                android:id="@+id/readNfcButton"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#E53935"
+                android:text="READ NFC"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+
+        <!-- Funds Interface Button -->
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#43A047"
+            android:text="PAYMENT"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+    <!-- Menu Interface Section -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="#CCCCCC"
+        android:padding="16dp">
+
+        <!-- Header with Edit Button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/menuInterfaceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#666666"
+                android:gravity="center"
+                android:padding="8dp"
+                android:shadowRadius="0"
+                android:text="            Menu Interface"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#666666"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    app:icon="@android:drawable/ic_menu_edit"
+                    app:iconGravity="end"
+                    app:iconSize="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Menu Buttons -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <GridLayout
+                    android:id="@+id/menuLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:columnCount="3"
+                    android:padding="8dp">
+                </GridLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
